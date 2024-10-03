@@ -1,0 +1,21 @@
+use reqwest;
+use std::error::Error;
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn Error>> {
+    let url = format!(
+								"https://api.ip2location.io/?key={}&ip={}&format=json",
+								"E780873E02991B8F5C03A758F44B1AB4", "192.168.0.43"
+				  );
+	let b = reqwest::get(url)
+				  .get(url)
+				  .send()
+				  .await
+				  .expect("failed to get response")
+				  .text()
+				  .await
+				  .expect("failed to get payload");
+
+	println!("Got {:?}", b);
+	Ok(())
+}
