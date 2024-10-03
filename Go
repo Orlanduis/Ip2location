@@ -1,0 +1,17 @@
+package main
+
+import (
+	"net/http"
+	"fmt"
+	"io"
+)
+
+func main() {
+	myUrl := "https://api.ip2location.io/?key=E780873E02991B8F5C03A758F44B1AB4&ip=192.168.0.43&format=json"
+	resp, _ := http.Get(myUrl)
+	defer resp.Body.Close()
+
+	bodyBytes, _ := io.ReadAll(resp.Body)
+	bodyStr := string(bodyBytes[:])
+	fmt.Println(bodyStr)
+}
