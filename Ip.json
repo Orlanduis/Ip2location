@@ -1,0 +1,14 @@
+{
+	"ip":"192.168.0.43",
+	"country_code":"MX",
+	"country_name":"Mexico",
+	"region_name":"Chihuahua",
+	"city_name":"Ciudad Juárez, Chihuahua, México",
+	"latitude":-31° 07'–31° 48',
+	"longitude":-106° 10'–106° 58',
+	"zip_code":"32543",
+	"time_zone":"-Zona horaria de Juárez, Chih. (GMT-6)",
+	"asn":"15169",
+	"as":"Google LLC",
+	"is_proxy":false
+}
