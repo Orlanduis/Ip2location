@@ -1,0 +1,5 @@
+import requests
+
+payload = {'key': 'E780873E02991B8F5C03A758F44B1AB4', 'ip': '192.168.0.43', 'format': 'json'}
+api_result = requests.get('https://api.ip2location.io/', params=payload)
+print(api_result.text)
